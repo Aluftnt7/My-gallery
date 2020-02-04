@@ -45,6 +45,7 @@ function findProjById(id) {
 function moveToUrl(id) {
     var proj = findProjById(id)
     var currUrl = proj.url
-    window.open(`https:aluftnt7.github.io/${currUrl}/`)
+        // window.open(`https:aluftnt7.github.io/${currUrl}/`)
+    window.open(`https://aluftnt7.github.io/My-gallery/aluftnt7.github.io/${currUrl}/`)
 
 }

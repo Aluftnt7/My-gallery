@@ -26,7 +26,7 @@ function renderHoverProt() {
                     <i class="fa fa-plus fa-3x"></i>
                 </div>
             </div>
-            <img class="img-fluid my-img" src=${project.url} alt="">
+            <img class="img-fluid my-img" src=${project.imgUrl} alt="">
         </a>
         <div class="portfolio-caption">
             <h4>${project.name}</h4>
@@ -49,14 +49,15 @@ function renderModal(projectId) {
 
         `<h2>${project.name}</h2>
             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-fluid d-block mx-auto" src=${project.url} alt="">
-            <p>Use this area to describe your project. ${project.desc}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
+            <img class="img-fluid d-block mx-auto" src=${project.imgUrl} alt="">
+            <p> ${project.desc}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
                 maiores repudiandae, nostrum, reiciendis facere nemo!</p>
             <ul class="list-inline">
                 <li>Date: ${project.publishedAt}</li>
                 <li>Client: Threads</li>
                 <li>Category: Illustration</li>
             </ul>
+            <button class="btn btn-primary btn-watch-project" onClick = "moveToUrl(${project.id})"  type="button"> Wanna watch? </button>
             <button class="btn btn-primary" data-dismiss="modal" type="button">
     <i class="fa fa-times"></i>
     Close Project</button>`
